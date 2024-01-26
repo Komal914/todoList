@@ -18,6 +18,38 @@ body {
   text-align: center;
 }
 
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.WorkModeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  height: 3rem;
+  background: #551e1a;
+  color: white;
+}
+
+.SidePanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  height: 10rem;
+  width: 10rem;
+  background: #551e1a;
+  color: white;
+}
+
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
