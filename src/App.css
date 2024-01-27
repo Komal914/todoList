@@ -24,9 +24,8 @@ body {
   left: 0;
   height: 3rem;
   width: 3rem;
-  padding: 0.2rem;
-  margin-left: 0.5rem;
-  margin-top: 0.2rem;
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
 }
 
 .WorkModeButton {
@@ -35,8 +34,17 @@ body {
   right: 0;
   padding: 1rem;
   height: 3rem;
+  width: 10rem;
   background: #551e1a;
+  color: black;
+}
+
+.WorkOn {
   color: white;
+}
+
+.WorkOff {
+  color: black;
 }
 
 .SidePanel {
