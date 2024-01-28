@@ -1,3 +1,17 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-const WorkModeContext = createContext();
+export const WorkModeContext = createContext({
+  workMode: false,
+  setWorkMode: () => null,
+});
+
+export const WorkModeContextProvider = ({ children }) => {
+  const [workMode, setWorkMode] = useState(false);
+  const value = { workMode, setWorkMode };
+
+  return (
+    <WorkModeContext.Provider value={value}>
+      {children}
+    </WorkModeContext.Provider>
+  );
+};

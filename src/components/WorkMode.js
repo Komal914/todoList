@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { WorkModeContext } from "../context/WorkModeContext";
 
 const WorkMode = () => {
-  const [workMode, setWorkMode] = useState(false);
+  const { workMode, setWorkMode } = useContext(WorkModeContext);
 
   const workModeHandler = () => {
     setWorkMode(!workMode);
+    console.log("set: ", !workMode);
   };
 
   return (
