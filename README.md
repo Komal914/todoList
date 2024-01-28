@@ -6,5 +6,8 @@ This website offers a simple and warm UI for creating a todo list. Feel free to 
 
 ## Incoming Features 
 
-lofi music player 
+Work Mode Feature
+- provides a timer for your work sessions and breaks
+
+Lofi Music Player 
 
