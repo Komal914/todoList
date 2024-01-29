@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
-import WorkModeButton from "../WorkModeButton";
+import WorkModeButton from "../WorkModeButton/WorkModeButton";
 import logo from "../../assets/coffeeLogo.png";
 import SidePanel from "../sidePanel/SidePanel";
 import "./navigation.css";
