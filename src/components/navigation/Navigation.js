@@ -1,8 +1,8 @@
 import { Fragment, useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
-import WorkModeButton from "../WorkModeButton";
-import logo from "../../coffeeLogo.png";
-import SidePanel from "../SidePanel";
+import WorkModeButton from "../WorkModeButton/WorkModeButton";
+import logo from "../../assets/coffeeLogo.png";
+import SidePanel from "../sidePanel/SidePanel";
 import "./navigation.css";
 
 const Navigation = () => {
