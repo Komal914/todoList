@@ -24,6 +24,7 @@ const Timer = () => {
     expiryTimestamp,
     onExpire: () => console.warn("onExpire called"),
   });
+
   return (
     <div className="Timer-Container">
       <div className="Timer">
@@ -33,7 +34,11 @@ const Timer = () => {
         </div>
       </div>
       <div className="TimerButtons">
-        <FontAwesomeIcon icon={faPlay} />
+        {isRunning ? (
+          <FontAwesomeIcon icon={faPause} onClick={pause} />
+        ) : (
+          <FontAwesomeIcon icon={faPlay} onClick={resume} />
+        )}
         <FontAwesomeIcon icon={faMusic} />
       </div>
     </div>
