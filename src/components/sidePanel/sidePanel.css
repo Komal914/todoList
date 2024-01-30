@@ -1,0 +1,16 @@
+.SidePanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  height: 0rem;
+  width: 10rem;
+  background: #551e1a;
+  color: white;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.SidePanelOpen {
+  height: 12rem;
+}
