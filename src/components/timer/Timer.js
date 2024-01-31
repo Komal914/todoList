@@ -28,18 +28,17 @@ const Timer = () => {
   return (
     <div className="Timer-Container">
       <div className="Timer">
-        <div style={{ fontSize: "1.1rem" }}>
-          <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:
-          <span>{seconds}</span>
+        <div style={{ fontSize: "1.3rem" }}>
+          <span>{minutes}</span>:<span>{seconds}</span>
         </div>
       </div>
       <div className="TimerButtons">
         {isRunning ? (
-          <FontAwesomeIcon icon={faPause} onClick={pause} />
+          <FontAwesomeIcon className="click" icon={faPause} onClick={pause} />
         ) : (
-          <FontAwesomeIcon icon={faPlay} onClick={resume} />
+          <FontAwesomeIcon className="click" icon={faPlay} onClick={resume} />
         )}
-        <FontAwesomeIcon icon={faMusic} />
+        <FontAwesomeIcon className="click" icon={faMusic} />
       </div>
     </div>
   );
