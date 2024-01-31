@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { WorkModeContext } from "../../context/WorkModeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -7,8 +8,11 @@ import { useTimer } from "react-timer-hook";
 import "./timer.css";
 
 const Timer = () => {
+  const { setOnBreak } = useContext(WorkModeContext);
+
+  // custom timer hook
   const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 3000);
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
   const {
     totalSeconds,
     seconds,
@@ -22,7 +26,14 @@ const Timer = () => {
     restart,
   } = useTimer({
     expiryTimestamp,
-    onExpire: () => console.warn("onExpire called"),
+    onExpire: () => {
+      console.warn("onExpire called");
+      console.log("time for your 10 min break ");
+      const time = new Date();
+      time.setSeconds(time.getSeconds() + 600);
+      setOnBreak(true);
+      restart(time);
+    },
   });
 
   return (
