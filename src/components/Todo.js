@@ -5,23 +5,30 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ToDo = ({ todo, toggleComplete, editTodo, deleteTodo, starTodo }) => {
+  const completed = todo.completed ? "completed click" : "click";
+  const starred = todo.isStarred ? "starred Todo" : "Todo";
+
   return (
-    <div className={`${todo.isStarred ? "starred Todo" : "Todo"}`}>
-      <FontAwesomeIcon icon={faStar} onClick={() => starTodo(todo.id)} />
-      <p
-        className={`${todo.completed ? "completed" : ""}`}
-        onClick={() => toggleComplete(todo.id)}
-      >
+    <div className={starred}>
+      <FontAwesomeIcon
+        className={completed}
+        icon={faStar}
+        onClick={() => starTodo(todo.id)}
+      />
+      <p className={completed} onClick={() => toggleComplete(todo.id)}>
         {todo.task}
       </p>
 
-      <div>
-        <FontAwesomeIcon
-          icon={faPenToSquare}
-          onClick={() => editTodo(todo.id)}
-        />
-        <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(todo.id)} />
-      </div>
+      <FontAwesomeIcon
+        className={completed}
+        icon={faPenToSquare}
+        onClick={() => editTodo(todo.id)}
+      />
+      <FontAwesomeIcon
+        className={completed}
+        icon={faTrash}
+        onClick={() => deleteTodo(todo.id)}
+      />
     </div>
   );
 };
