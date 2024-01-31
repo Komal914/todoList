@@ -21,7 +21,9 @@ const WorkModeButton = () => {
           {workMode ? " On" : " Off"}
         </div>
       ) : (
-        <div>on Break man</div>
+        <div style={{ color: "white" }} className="WorkModeButton">
+          Break Time!
+        </div>
       )}
     </Fragment>
   );
