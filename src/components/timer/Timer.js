@@ -13,7 +13,7 @@ const Timer = () => {
 
   // custom timer hook
   const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 3000);
   const {
     totalSeconds,
     seconds,
