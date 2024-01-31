@@ -16,14 +16,3 @@
 .WorkOff {
   color: black;
 }
-
-.BreakTimeButton {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  height: 3rem;
-  width: 10rem;
-  background: #e6b27d;
-  color: black;
-}

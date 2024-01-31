@@ -8,7 +8,8 @@ import { useTimer } from "react-timer-hook";
 import "./timer.css";
 
 const Timer = () => {
-  const { setOnBreak } = useContext(WorkModeContext);
+  const { setOnBreak, onBreak, setWorkMode, workMode } =
+    useContext(WorkModeContext);
 
   // custom timer hook
   const expiryTimestamp = new Date();
@@ -29,10 +30,8 @@ const Timer = () => {
     onExpire: () => {
       console.warn("onExpire called");
       console.log("time for your 10 min break ");
-      const time = new Date();
-      time.setSeconds(time.getSeconds() + 600);
-      setOnBreak(true);
-      restart(time);
+      setWorkMode(!workMode);
+      setOnBreak(!onBreak);
     },
   });
 
