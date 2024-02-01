@@ -42,6 +42,7 @@ const Timer = () => {
       console.log("time for your 10 min break ");
       setWorkMode(!workMode);
       setOnBreak(!onBreak);
+      setMusicOn(!musicOn);
       play();
     },
   });
