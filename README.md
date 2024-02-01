@@ -25,5 +25,6 @@ This website offers a simple and warm UI for getting organized. Start by creatin
 
 Work Mode Feature
 - prompt for 10 min breaks
+- local storage api 
 - draggable todos
 
