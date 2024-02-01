@@ -16,6 +16,7 @@ This website offers a simple and warm UI for getting organized. Start by creatin
 <img width="191" alt="Screenshot 2024-01-31 at 8 26 45 PM" src="https://github.com/Komal914/todoList/assets/44416323/93507cf8-b81a-47cf-a679-34d8478ffe6a">
 
 ### Lofi Music Player
+Click on the video icon inside workmode to unlock the famous lofi girl live stream. Work alongside her!
 <img width="347" alt="Screenshot 2024-01-31 at 8 22 05 PM" src="https://github.com/Komal914/todoList/assets/44416323/1e7e29b5-048b-4a52-9fd6-e7260aa3b7db">
 
 
@@ -27,4 +28,5 @@ Work Mode Feature
 - prompt for 10 min breaks
 - local storage api 
 - draggable todos
+- mobile mode UI update
 
