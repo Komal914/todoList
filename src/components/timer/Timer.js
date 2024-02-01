@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
+import useSound from "use-sound";
+import alarm from "../../assets/mixkit-digital-clock-digital-alarm-buzzer-992.wav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -9,11 +11,14 @@ import "./timer.css";
 
 const Timer = () => {
   const { setOnBreak, onBreak, setWorkMode, workMode } =
-    useContext(WorkModeContext);
+    useContext(WorkModeContext); //state variables
+
+  //customer sound hook -> alarm sound
+  const [play, { stop }] = useSound(alarm);
 
   // custom timer hook
   const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 3000);
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
   const {
     totalSeconds,
     seconds,
@@ -32,6 +37,7 @@ const Timer = () => {
       console.log("time for your 10 min break ");
       setWorkMode(!workMode);
       setOnBreak(!onBreak);
+      play();
     },
   });
 
