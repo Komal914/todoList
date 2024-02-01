@@ -1,17 +1,22 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
 import useSound from "use-sound";
 import alarm from "../../assets/mixkit-digital-clock-digital-alarm-buzzer-992.wav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faVideoSlash } from "@fortawesome/free-solid-svg-icons";
 import { useTimer } from "react-timer-hook";
 import "./timer.css";
 
 const Timer = () => {
-  const { setOnBreak, onBreak, setWorkMode, workMode } =
-    useContext(WorkModeContext); //state variables
+  const { setOnBreak, onBreak, setWorkMode, workMode, musicOn, setMusicOn } =
+    useContext(WorkModeContext); //state variables from context
+
+  const toggleMusic = () => {
+    setMusicOn(!musicOn);
+  };
 
   //customer sound hook -> alarm sound
   const [play, { stop }] = useSound(alarm);
@@ -54,7 +59,15 @@ const Timer = () => {
         ) : (
           <FontAwesomeIcon className="click" icon={faPlay} onClick={resume} />
         )}
-        <FontAwesomeIcon className="click" icon={faMusic} />
+        {!musicOn ? (
+          <FontAwesomeIcon
+            className="click"
+            icon={faVideoSlash}
+            onClick={toggleMusic}
+          />
+        ) : (
+          <FontAwesomeIcon icon={faVideo} onClick={toggleMusic} />
+        )}
       </div>
     </div>
   );

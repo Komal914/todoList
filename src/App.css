@@ -48,6 +48,7 @@ h1 {
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .TodoWrapper > h1 {
