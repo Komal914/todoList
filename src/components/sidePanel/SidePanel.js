@@ -18,11 +18,7 @@ const SidePanel = () => {
           <Timer></Timer>
         </div>
       ) : (
-        <div
-          className={
-            workMode ? "SidePanelMobile SidePanelOpenMobile" : "SidePanelMobile"
-          }
-        >
+        <div>
           <Timer></Timer>
         </div>
       )}
