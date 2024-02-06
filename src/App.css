@@ -79,7 +79,7 @@ h1 {
 
 .Todo {
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr 0.5fr;
   background: #883d1a;
   color: #fff;
   padding: 0.75rem 1rem;
@@ -89,10 +89,6 @@ h1 {
 
 .Todo > p {
   justify-self: flex-start;
-}
-
-.fa-trash {
-  margin-left: 0.75rem;
 }
 
 .incompleted {
@@ -113,9 +109,4 @@ h1 {
 }
 .starred > *:hover {
   color: #883d1a;
-}
-
-.edit-icon,
-.delete-icon {
-  cursor: pointer;
 }
