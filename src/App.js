@@ -1,5 +1,5 @@
 import { WorkModeContextProvider } from "./context/WorkModeContext";
-import TodoWrapper from "./components/TodoWrapper";
+import ToDoContainer from "./components/TodoContainer/TodoContainer";
 import Navigation from "./components/navigation/Navigation";
 import LofiVideoPlayer from "./components/lofiVideoPlayer/LofiVideoPlayer";
 import "./App.css";
@@ -9,7 +9,7 @@ function App() {
     <WorkModeContextProvider>
       <div className="App">
         <Navigation></Navigation>
-        <TodoWrapper></TodoWrapper>
+        <ToDoContainer></ToDoContainer>
         <LofiVideoPlayer></LofiVideoPlayer>
       </div>
     </WorkModeContextProvider>

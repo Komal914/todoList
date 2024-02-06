@@ -8,11 +8,11 @@ import "./navigation.css";
 const Navigation = () => {
   const { workMode } = useContext(WorkModeContext);
   return (
-    <Fragment>
-      <img src={logo} className="Logo" />
+    <div className="Navigation">
+      <img alt="coffee logo" src={logo} className="Logo"></img>
       <WorkModeButton></WorkModeButton>
       {workMode ? <SidePanel></SidePanel> : null}
-    </Fragment>
+    </div>
   );
 };
 

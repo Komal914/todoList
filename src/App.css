@@ -13,9 +13,6 @@ body {
 
 .App {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .click {
@@ -27,20 +24,15 @@ body {
   color: #e6b27e;
 }
 
-.Logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  width: 3rem;
-  margin-left: 0.1rem;
-  margin-top: 0.1rem;
-}
-
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
+}
+
+.TodoContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .TodoWrapper {
