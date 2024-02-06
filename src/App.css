@@ -12,10 +12,8 @@ body {
 }
 
 .App {
+  display: grid;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .click {
@@ -27,25 +25,21 @@ body {
   color: #e6b27e;
 }
 
-.Logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  width: 3rem;
-  margin-left: 0.1rem;
-  margin-top: 0.1rem;
-}
-
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
 }
 
+.TodoContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .TodoWrapper {
   background: #551e1a;
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding: 2rem;
   border-radius: 5px;
   z-index: 1;
@@ -86,7 +80,6 @@ h1 {
 .Todo {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr 1fr;
-
   background: #883d1a;
   color: #fff;
   padding: 0.75rem 1rem;

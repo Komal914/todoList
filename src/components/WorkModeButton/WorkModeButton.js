@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
+import "./workModeButton.css";
 
 const WorkModeButton = () => {
   const { workMode, setWorkMode } = useContext(WorkModeContext);

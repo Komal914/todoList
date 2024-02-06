@@ -1,7 +1,22 @@
-.SidePanel {
+.SidePanelContainer {
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 2rem;
+}
+
+.SidePanelContainerMobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #551e1a;
+  width: max-content;
+  height: 3rem;
+  justify-content: flex-end;
+  color: white;
+}
+
+.SidePanel {
   padding: 1rem;
   height: 0rem;
   width: 10rem;
@@ -12,5 +27,5 @@
 }
 
 .SidePanelOpen {
-  height: 10rem;
+  height: 8rem;
 }
