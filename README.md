@@ -28,5 +28,5 @@ Work Mode Feature
 - prompt for 10 min breaks
 - local storage api 
 - draggable todos
-- mobile mode UI update
+
 
