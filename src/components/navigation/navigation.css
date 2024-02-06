@@ -2,10 +2,26 @@
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  align-items: center;
+}
+
+.NavigationMobile {
+  background: #551e1a;
+  font-size: medium;
 }
 
 .Logo {
   height: 3rem;
   width: 3rem;
+}
+
+.NavigationSidePanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.NavigationSidePanelMobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
 }
