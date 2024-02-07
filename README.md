@@ -26,6 +26,6 @@ Click on the video icon inside workmode to unlock the famous lofi girl live stre
 
 - prompt for 10 min breaks
 - local storage api 
-- draggable todos
+
 
 
