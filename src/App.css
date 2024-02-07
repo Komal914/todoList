@@ -9,6 +9,7 @@
 
 body {
   background: #883d1a;
+  min-height: 100vh;
 }
 
 .App {
@@ -40,6 +41,7 @@ h1 {
 .TodoWrapper {
   background: #551e1a;
   margin-top: 10rem;
+  margin-bottom: 10rem;
   padding: 2rem;
   border-radius: 5px;
   z-index: 1;
