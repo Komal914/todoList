@@ -11,7 +11,7 @@ const SidePanel = () => {
 
   //for timer 50 mins
   const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 3000);
 
   return (
     <div

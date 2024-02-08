@@ -4,7 +4,7 @@ import "./breakModal.css";
 
 const BreakModal = () => {
   const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 600);
   return (
     <div className="BreakModalContainer">
       <div className="BreakModalHeader">
