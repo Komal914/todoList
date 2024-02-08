@@ -10,22 +10,27 @@ This website offers a simple and warm UI for getting organized. Start by creatin
 #### User can oganize their tasks before turning on WorkMode
 <img width="472" alt="Screenshot 2024-01-24 at 2 06 13 PM" src="https://github.com/Komal914/todoList/assets/44416323/71c9ff38-c084-4916-a721-74b150d60d70">
 
+### Lofi Music Player
+Click on the video icon inside workmode to unlock the famous lofi girl live stream. Work alongside her!
+<img width="347" alt="Screenshot 2024-01-31 at 8 22 05 PM" src="https://github.com/Komal914/todoList/assets/44416323/1e7e29b5-048b-4a52-9fd6-e7260aa3b7db">
+
 ### Pomodora Timer
 #### When WorkMode is turned on, an automatic 50 min timer will began. When the timer goes out, an alarm will ring and work mode will be shut off.
 
 <img width="191" alt="Screenshot 2024-01-31 at 8 26 45 PM" src="https://github.com/Komal914/todoList/assets/44416323/93507cf8-b81a-47cf-a679-34d8478ffe6a">
 
-### Lofi Music Player
-Click on the video icon inside workmode to unlock the famous lofi girl live stream. Work alongside her!
-<img width="347" alt="Screenshot 2024-01-31 at 8 22 05 PM" src="https://github.com/Komal914/todoList/assets/44416323/1e7e29b5-048b-4a52-9fd6-e7260aa3b7db">
+### Break Timer
+#### When WorkMode timer rings, an automatic 10 min break timer will began. When the timer goes out, an alarm will ring. The user can complete the 1 hour work session by clicking the 'Session Complete". 
+<img width="555" alt="Screenshot 2024-02-07 at 8 42 02 PM" src="https://github.com/Komal914/todoList/assets/44416323/0f47f269-04a8-4eca-acc7-a9e3eb06b089">
+
+
 
 
 
 
 ## Incoming Features 
 
-- prompt for 10 min breaks
-- local storage api 
+- local storage api -> to preserve user todos
 
 
 
