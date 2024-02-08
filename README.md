@@ -25,13 +25,8 @@ Click on the video icon inside workmode to unlock the famous lofi girl live stre
 <img width="555" alt="Screenshot 2024-02-07 at 8 42 02 PM" src="https://github.com/Komal914/todoList/assets/44416323/0f47f269-04a8-4eca-acc7-a9e3eb06b089">
 
 
-
-
-
-
-## Incoming Features 
-
-- local storage api -> to preserve user todos
+### Local Storage Persistent ToDo Tasks 
+#### When the user refreshes the page, the tasks persist on the website by using local storage. So refresh all you like! 
 
 
 
