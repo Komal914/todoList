@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/todoList/static/css/main.999ae464.css",
-    "main.js": "/todoList/static/js/main.923fcc01.js",
+    "main.css": "/todoList/static/css/main.2c2dea8d.css",
+    "main.js": "/todoList/static/js/main.33cb706a.js",
     "static/js/845.c724e7d9.chunk.js": "/todoList/static/js/845.c724e7d9.chunk.js",
     "reactPlayerYouTube.js": "/todoList/static/js/reactPlayerYouTube.f54c0ef0.chunk.js",
     "reactPlayerSoundCloud.js": "/todoList/static/js/reactPlayerSoundCloud.91626487.chunk.js",
@@ -18,10 +18,11 @@
     "reactPlayerPreview.js": "/todoList/static/js/reactPlayerPreview.4b578bb9.chunk.js",
     "static/js/787.d1061748.chunk.js": "/todoList/static/js/787.d1061748.chunk.js",
     "static/media/mixkit-digital-clock-digital-alarm-buzzer-992.wav": "/todoList/static/media/mixkit-digital-clock-digital-alarm-buzzer-992.7ba9fbe41af175d976bf.wav",
+    "static/media/coffeeBreak.png": "/todoList/static/media/coffeeBreak.a897fc207996a1c61e7d.png",
     "static/media/coffeeLogo.png": "/todoList/static/media/coffeeLogo.c35f90f303b67271717d.png",
     "index.html": "/todoList/index.html",
-    "main.999ae464.css.map": "/todoList/static/css/main.999ae464.css.map",
-    "main.923fcc01.js.map": "/todoList/static/js/main.923fcc01.js.map",
+    "main.2c2dea8d.css.map": "/todoList/static/css/main.2c2dea8d.css.map",
+    "main.33cb706a.js.map": "/todoList/static/js/main.33cb706a.js.map",
     "845.c724e7d9.chunk.js.map": "/todoList/static/js/845.c724e7d9.chunk.js.map",
     "reactPlayerYouTube.f54c0ef0.chunk.js.map": "/todoList/static/js/reactPlayerYouTube.f54c0ef0.chunk.js.map",
     "reactPlayerSoundCloud.91626487.chunk.js.map": "/todoList/static/js/reactPlayerSoundCloud.91626487.chunk.js.map",
@@ -39,7 +40,7 @@
     "787.d1061748.chunk.js.map": "/todoList/static/js/787.d1061748.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.999ae464.css",
-    "static/js/main.923fcc01.js"
+    "static/css/main.2c2dea8d.css",
+    "static/js/main.33cb706a.js"
   ]
 }
