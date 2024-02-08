@@ -22,12 +22,3 @@
   text-decoration: line-through;
   cursor: pointer;
 }
-
-.starred {
-  background: #e6b27e;
-  text-transform: uppercase;
-  color: #1b1212;
-}
-.starred > *:hover {
-  color: #883d1a;
-}

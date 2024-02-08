@@ -25,6 +25,15 @@ body {
   transition: 0.4s;
   color: #e6b27e;
 }
+.starred {
+  background: #e6b27e;
+  text-transform: uppercase;
+  color: #1b1212;
+}
+.starred > *:hover {
+  transition: 0.4s;
+  color: #883d1a;
+}
 
 h1 {
   color: #fff;
