@@ -6,7 +6,6 @@ const TodoForm = ({ addTodo }) => {
 
   const handleChange = (e) => {
     setValue(e.target.value);
-    console.log(value);
   };
 
   const handleSubmit = (e) => {

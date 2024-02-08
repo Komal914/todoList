@@ -14,7 +14,6 @@ export const MobileModeContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    console.log("mobile: ", mobile);
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {
       window.removeEventListener("resize", handleWindowSizeChange);
