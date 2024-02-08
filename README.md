@@ -1,6 +1,6 @@
 # ☕️ Cafe TodoList
 
-This website offers a simple and warm UI for getting organized. Start by creating your tasks, and organizing them by priority. Then, head over to turn on your 'Work Mode'. Your 50 min pomadoro work session will start and you can start on your tasks for the day. 
+This website offers a simple and warm UI for getting productive. Start by creating your tasks, and organizing them by priority. Then, head over to turn on your 'Work Mode'. Your 50 min pomadoro work session will start and you can start on your tasks for the day. 
 <img width="1439" alt="Screenshot 2024-01-31 at 7 27 19 PM" src="https://github.com/Komal914/todoList/assets/44416323/98491c21-009a-4d95-9b6a-c466b64f3e1f">
 
 
