@@ -1,7 +1,6 @@
-import { faHandFist } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
-import Todo from "./Todo";
 import { useState } from "react";
+import Todo from "../Todo/Todo";
+import "./editTodo.css";
 
 const EditTodoForm = ({ editTodo, editTask, todo }) => {
   const [value, setValue] = useState(todo.task);

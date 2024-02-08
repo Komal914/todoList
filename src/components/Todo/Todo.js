@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import "./todo.css";
 
 const ToDo = ({ todo, toggleComplete, editTodo, deleteTodo, starTodo }) => {
   const completed = todo.completed ? "completed click" : "click";

@@ -2,12 +2,16 @@ import { Fragment, useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
 import { MobileModeContext } from "../../context/MobileModeContext";
 import WorkModeButton from "../WorkModeButton/WorkModeButton";
-import Timer from "../timer/Timer";
+import PomodoroTimer from "../PomodoroTimer/PomodoroTimer";
 import "./sidePanel.css";
 
 const SidePanel = () => {
   const { workMode } = useContext(WorkModeContext);
   const { mobile } = useContext(MobileModeContext);
+
+  //for timer 50 mins
+  const expiryTimestamp = new Date();
+  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 10);
 
   return (
     <div
@@ -15,11 +19,11 @@ const SidePanel = () => {
     >
       {!mobile ? (
         <div className={workMode ? "SidePanel SidePanelOpen" : "SidePanel"}>
-          <Timer></Timer>
+          <PomodoroTimer expiryTimestamp={expiryTimestamp}></PomodoroTimer>
         </div>
       ) : (
         <div>
-          <Timer></Timer>
+          <PomodoroTimer expiryTimestamp={expiryTimestamp}></PomodoroTimer>
         </div>
       )}
     </div>

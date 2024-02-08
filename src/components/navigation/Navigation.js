@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
 import { MobileModeContext } from "../../context/MobileModeContext";
 import WorkModeButton from "../WorkModeButton/WorkModeButton";
-import SidePanel from "../sidePanel/SidePanel";
+import SidePanel from "../SidePanel/SidePanel";
 import logo from "../../assets/coffeeLogo.png";
 import "./navigation.css";
 

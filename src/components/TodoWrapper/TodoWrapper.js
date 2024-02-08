@@ -1,8 +1,9 @@
 import React from "react";
-import TodoForm from "./TodoForm";
-import EditTodoForm from "./EditTodoForm";
-import ToDo from "./Todo";
+import TodoForm from "../TodoForm/TodoForm";
+import EditTodoForm from "../EditTodoForm/EditTodoForm";
+import ToDo from "../Todo/Todo";
 import { useState } from "react";
+import "./todoWrapper.css";
 import { v4 as uuidv4 } from "uuid";
 uuidv4();
 

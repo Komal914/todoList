@@ -1,8 +1,8 @@
 import { WorkModeContextProvider } from "./context/WorkModeContext";
 import ToDoContainer from "./components/TodoContainer/TodoContainer";
-import Navigation from "./components/navigation/Navigation";
-import LofiVideoPlayer from "./components/lofiVideoPlayer/LofiVideoPlayer";
-import Footer from "./components/footer/Footer";
+import Navigation from "./components/Navigation/Navigation";
+import LofiVideoPlayer from "./components/LofiVideoPlayer/LofiVideoPlayer";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { MobileModeContextProvider } from "./context/MobileModeContext";
 

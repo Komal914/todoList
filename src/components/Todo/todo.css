@@ -1,0 +1,33 @@
+.Todo {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr 0.5fr;
+  background: #883d1a;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.Todo > p {
+  justify-self: flex-start;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c56f33;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.starred {
+  background: #e6b27e;
+  text-transform: uppercase;
+  color: #1b1212;
+}
+.starred > *:hover {
+  color: #883d1a;
+}

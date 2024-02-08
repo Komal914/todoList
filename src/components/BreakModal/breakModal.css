@@ -1,0 +1,23 @@
+.BreakModalContainer {
+  background: #541d1a;
+  width: 25rem;
+  color: black;
+  z-index: 5;
+  border-radius: 5px;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.BreakModalHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.BreakModalHeader > h1 {
+  font-family: "Moirai One", system-ui;
+  color: white;
+  font-size: 2rem;
+  margin-top: 1rem;
+}

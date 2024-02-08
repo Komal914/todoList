@@ -1,0 +1,12 @@
+.TodoWrapper {
+  background: #551e1a;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  padding: 2rem;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.TodoWrapper > h1 {
+  font-family: "Moirai One", system-ui;
+}
