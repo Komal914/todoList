@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocalStorage } from "../../useLocalStorage";
 import TodoForm from "../TodoForm/TodoForm";
 import EditTodoForm from "../EditTodoForm/EditTodoForm";
 import ToDo from "../Todo/Todo";
@@ -8,7 +9,9 @@ import { v4 as uuidv4 } from "uuid";
 uuidv4();
 
 const TodoWrapper = () => {
-  const [todos, setTodos] = useState([]);
+  //custom Hook -> setting local todos
+  const [todos, setTodos] = useLocalStorage("TODO_TASKS", []);
+
   const addTodo = (todo) => {
     setTodos([
       ...todos,
@@ -20,7 +23,6 @@ const TodoWrapper = () => {
         isStarred: false,
       },
     ]);
-    console.log(todos);
   };
 
   const toggleComplete = (id) => {

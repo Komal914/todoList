@@ -32,8 +32,6 @@ const Timer = ({ expiryTimestamp }) => {
     useTimer({
       expiryTimestamp,
       onExpire: () => {
-        console.warn("onExpire called");
-        console.log("time for your 10 min break timer.js ");
         setWorkMode(!workMode);
         setOnBreak(!onBreak);
         play();
