@@ -7,6 +7,12 @@
   z-index: 3;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.WorkModeButton:hover {
+  color: white;
+  transition: 0.5s;
 }
 
 .WorkOn {

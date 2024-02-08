@@ -1,0 +1,37 @@
+.BreakTimerContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: white;
+}
+
+.BreakTimeValues {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  display: flex;
+}
+
+.BreakTimeValues > p {
+  font-size: 6rem;
+}
+
+.CloseBreakTimer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  background: #e6b27d;
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: black;
+  transition: 0.5s;
+  border-style: hidden;
+  cursor: pointer;
+  font-size: small;
+}
+
+.CloseBreakTimer:hover {
+  color: #883d1a;
+  transition: 0.5s;
+}

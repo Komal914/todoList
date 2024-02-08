@@ -1,11 +1,11 @@
+import { useTimer } from "react-timer-hook";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
 import { MobileModeContext } from "../../context/MobileModeContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTimer } from "react-timer-hook";
 import alarm from "../../assets/mixkit-digital-clock-digital-alarm-buzzer-992.wav";
 import useSound from "use-sound";
-import "./timer.css";
+import "./pomodoroTimer.css";
 import {
   faPlay,
   faVideo,
@@ -13,7 +13,7 @@ import {
   faVideoSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Timer = () => {
+const Timer = ({ expiryTimestamp }) => {
   const { setOnBreak, onBreak, setWorkMode, workMode, musicOn, setMusicOn } =
     useContext(WorkModeContext); //state variables from context
 
@@ -27,17 +27,15 @@ const Timer = () => {
   const [play, { stop }] = useSound(alarm);
 
   // custom timer hook
-  const expiryTimestamp = new Date();
-  expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 3000);
+
   const { seconds, minutes, isRunning, start, pause, resume, restart } =
     useTimer({
       expiryTimestamp,
       onExpire: () => {
         console.warn("onExpire called");
-        console.log("time for your 10 min break ");
+        console.log("time for your 10 min break timer.js ");
         setWorkMode(!workMode);
         setOnBreak(!onBreak);
-        setMusicOn(!musicOn);
         play();
       },
     });
