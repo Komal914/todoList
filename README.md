@@ -28,5 +28,10 @@ Click on the video icon inside workmode to unlock the famous lofi girl live stre
 ### Local Storage Persistent ToDo Tasks 
 #### When the user refreshes the page, the tasks persist on the website by using local storage. So refresh all you like! 
 
+## Incoming features
+- Wrapping the todo text into a second line when user input is large
+- using persistent API for timer
+- refactor code -> create a general timer for both break timer + pomodoro timer to avoid code repeat 
+
 
 
