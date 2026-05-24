@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { WorkModeContext } from "../../context/WorkModeContext";
 import { MobileModeContext } from "../../context/MobileModeContext";
-import alarm from "../../assets/mixkit-digital-clock-digital-alarm-buzzer-992.wav";
+import yay from "../../assets/yay.mp3";
 import useSound from "use-sound";
 import "./pomodoroTimer.css";
 import {
@@ -23,10 +23,7 @@ const Timer = ({ expiryTimestamp }) => {
     setMusicOn(!musicOn);
   };
 
-  //customer sound hook -> alarm sound
-  const [play, { stop }] = useSound(alarm);
-
-  // custom timer hook
+  const [playYay, { stop: stopYay }] = useSound(yay, { loop: true });
 
   const { seconds, minutes, isRunning, start, pause, resume, restart } =
     useTimer({
@@ -34,7 +31,8 @@ const Timer = ({ expiryTimestamp }) => {
       onExpire: () => {
         setWorkMode(!workMode);
         setOnBreak(!onBreak);
-        play();
+        playYay();
+        setTimeout(() => stopYay(), 10000);
       },
     });
 
