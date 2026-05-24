@@ -1,16 +1,23 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare, faTrash, faStar, faGripVertical } from "@fortawesome/free-solid-svg-icons";
 import "./todo.css";
 
-const ToDo = ({ todo, toggleComplete, editTodo, deleteTodo, starTodo }) => {
+const ToDo = ({ todo, toggleComplete, editTodo, deleteTodo, starTodo, provided }) => {
   const completed = todo.completed ? "completed click" : "click";
   const starred = todo.isStarred ? "starred Todo" : "Todo";
 
   return (
-    <div className={starred}>
+    <div
+      className={starred}
+      ref={provided.innerRef}
+      {...provided.draggableProps}
+    >
+      <FontAwesomeIcon
+        className="drag-handle"
+        icon={faGripVertical}
+        {...provided.dragHandleProps}
+      />
       <FontAwesomeIcon
         className={completed}
         icon={faStar}
@@ -19,7 +26,6 @@ const ToDo = ({ todo, toggleComplete, editTodo, deleteTodo, starTodo }) => {
       <p className={completed} onClick={() => toggleComplete(todo.id)}>
         {todo.task}
       </p>
-
       <FontAwesomeIcon
         className={completed}
         icon={faPenToSquare}

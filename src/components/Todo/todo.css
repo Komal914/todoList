@@ -1,11 +1,21 @@
 .Todo {
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 8fr 1fr 0.5fr;
   background: #883d1a;
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+
+.drag-handle {
+  cursor: grab;
+  color: rgba(255, 255, 255, 0.5);
+  align-self: center;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
 }
 
 .Todo > p {
